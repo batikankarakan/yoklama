@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/nameEnter"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nameEnter"
+        android:text="Name:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/nameEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toEndOf="@+id/mail"
+        android:layout_toRightOf="@+id/mail"
+        android:ems="10"
+        android:hint="Enter your name."
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameEnter"
+        android:layout_alignStart="@+id/nameEnter"
+        android:layout_below="@+id/nameEnter"
+        android:text="Surname:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/surnameEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surname"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/mail"
+        android:layout_toRightOf="@+id/mail"
+        android:ems="10"
+        android:hint="Enter your surname."
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surnameEnter"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/signup_btn"
+        android:layout_toStartOf="@+id/signup_btn"
+        android:text="E-mail:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/emailEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mail"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/mail"
+        android:layout_toRightOf="@+id/mail"
+        android:ems="10"
+        android:hint="Enter your e-mail."
+        android:inputType="textEmailAddress"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordEnter"
+        android:layout_alignLeft="@+id/emailEnter"
+        android:layout_alignStart="@+id/emailEnter"
+        android:text="Password:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/passwordEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordConfirm"
+        android:layout_alignLeft="@+id/passwordConfirm"
+        android:layout_alignStart="@+id/passwordConfirm"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Enter your password."
+        android:inputType="textPassword"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/passwordConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordConfirmEnter"
+        android:layout_marginBottom="13dp"
+        android:layout_toEndOf="@+id/mail"
+        android:layout_toRightOf="@+id/mail"
+        android:text="Confirm Your Password:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/passwordConfirmEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signup_btn"
+        android:layout_alignLeft="@+id/passwordConfirm"
+        android:layout_alignStart="@+id/passwordConfirm"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Confirm your password."
+        android:inputType="textPassword"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="@android:dimen/thumbnail_height"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp"
+        android:text="SIGN UP"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailEnter"
+        android:layout_alignLeft="@+id/emailEnter"
+        android:layout_alignStart="@+id/emailEnter"
+        android:text="email"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+
+</android.widget.RelativeLayout>
